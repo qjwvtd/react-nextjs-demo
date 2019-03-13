@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    list-style: none;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);
+}
+.nav li{
+    float: left;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
