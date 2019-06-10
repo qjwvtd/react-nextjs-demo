@@ -1,0 +1,21 @@
+{
+  "name": "react-next-exzample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export -o web",
+    "init": "next init"
+  },
+  "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
