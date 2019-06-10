@@ -1,3 +1,5 @@
+<h2>description:</h2>
+
 React's Server-side Rendering Scheme
 
 React的服务端渲染方案
@@ -26,9 +28,9 @@ npm run init
 
  npm run export
 
- #华丽的分界线#############################################################################################
+ -----------------------------------------------------------------------
 
- react-next-exzample
+ <h3>华丽的分界线,pakage.json配置注释</h3>
 
 scripts: {
 
@@ -49,5 +51,17 @@ scripts: {
  1、npm run dev,http://localhost:3000
  
  2、npm run export,//导出项目到自定义目录中，自定义目录在package.json中配置
+
+ --------------------------------------------------------------------------
+
+ <h3>Next.js 使用指南,配置</h3>
+
+使用指南-基本规则:<a href="http://jartto.wang/2018/05/27/nextjs-1/">配置指南3</a>
+
+使用指南-路由与加载:<a href="http://jartto.wang/2018/06/01/nextjs-2/">配置指南2</a>
+
+使用指南-高级配置:<a href="https://www.colabug.com/3083032.html">配置指南3</a>
+
+
  
  
