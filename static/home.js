@@ -1,0 +1,1 @@
+console.log('这是home的JS内容');
