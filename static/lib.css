@@ -1,0 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: inherit;
+	background: rgb(177, 195, 235);
+}
