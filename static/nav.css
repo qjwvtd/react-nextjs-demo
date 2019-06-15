@@ -1,0 +1,12 @@
+.nav{
+	list-style: none;
+	overflow: hidden;
+	background: rgba(8, 8, 8, 0.3);
+}
+.nav li{
+	float: left;
+	width: 120px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}

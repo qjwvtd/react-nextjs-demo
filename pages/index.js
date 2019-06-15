@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Head from 'next/head';
 import Header from "../components/header";
+import fetch from 'isomorphic-unfetch';
 
 /**
  * 测试头部组件
@@ -36,7 +37,10 @@ export default class extends Component{
 				});
 			}
 		}
-		return { arr };
+		const serviceData = await fetch('https://api.b91.com/api/node/getCompanyList');
+	    const json = await serviceData.json();
+
+    	return {arr, json }
 	}
 	render() {
 		return (
@@ -51,7 +55,9 @@ export default class extends Component{
 							return <li key={index}>{item.xh} - {item.value}</li>
 						})
 					}
-				</ul>			
+				</ul>
+				<h3>异步获取的服务器数据</h3>
+				{JSON.stringify(this.props.json)}	
 			</main>
 		)
 	}
