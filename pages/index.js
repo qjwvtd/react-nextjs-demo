@@ -37,7 +37,7 @@ export default class extends Component{
 				});
 			}
 		}
-		const serviceData = await fetch('https://api.b91.com/api/node/getCompanyList');
+		const serviceData = await fetch('https://api.github.com/repos/zeit/next.js');
 	    const json = await serviceData.json();
 
     	return {arr, json }
