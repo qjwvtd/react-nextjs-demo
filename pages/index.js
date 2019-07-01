@@ -18,8 +18,16 @@ function HomeHtmlHead(props) {
 }
 
 export default class extends Component{
-	static async getInitialProps({ req }) {
-		const res = {
+	static async getInitialProps(context) {
+		const {pathname,query,asPath,req,res,jsonPageRes,err} = context;
+		// console.log('pathname:'+pathname);
+		// console.log('query:'+JSON.stringify(query));
+		// console.log('asPath:'+asPath);
+		// console.log('req:'+req);
+		// console.log('res:'+res);
+		// console.log('jsonPageRes:'+jsonPageRes);
+		// console.log('err:'+err);
+		const result = {
 			pathname:`path section of URL`,
 			query:`query string section of URL parsed as an object`,
 			asPath:`String of the actual path (including the query) shows in the browser`,
@@ -29,18 +37,18 @@ export default class extends Component{
 			err:`Error object if any error is encountered during the rendering`
 		};
 		const arr = [];
-		for (const key in res) {
-			if (res.hasOwnProperty(key)) {
+		for (const key in result) {
+			if (result.hasOwnProperty(key)) {
 				arr.push({
 					xh:key,
-					value:res[key]
+					value:result[key]
 				});
 			}
 		}
 		const serviceData = await fetch('https://api.github.com/repos/zeit/next.js');
 	    const json = await serviceData.json();
 
-    	return {arr, json }
+    	return {arr, json };
 	}
 	render() {
 		return (

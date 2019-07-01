@@ -1,0 +1,21 @@
+{
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"no-empty": "warn",
+		"no-sparse-arrays": "error",
+		"no-unexpected-multiline": "error",
+		"no-unreachable": "warn",
+		"comma-dangle": ["error", "never"],
+		"indent": ["error"],
+		"semi": ["error", "always"],
+		"no-var": "error",
+		"no-shadow": 2,
+		"no-spaced-func": 2
+	}
+  }
